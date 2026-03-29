@@ -26,6 +26,8 @@ The system simulates execution, detects failures, and applies recovery actions w
 ## Architecture
 **This diagram illustrates the multi-agent workflow including parsing, execution, monitoring, and recovery.**
 
+[Architecture Document](policy-agent-system/ARCHITECTURE.md)
+
 <img src="policy-agent-system/src/docs/images/AI Multi-Agent Policy Execution System Architecture.png" alt="AI Multi-Agent Policy Execution System Architecture" width="700" />
 
 For the full architecture writeup, see `ARCHITECTURE.md`.
