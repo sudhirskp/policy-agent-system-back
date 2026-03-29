@@ -16,17 +16,17 @@ The system simulates execution, detects failures, and applies recovery actions w
 
 **Input**
 
-<img src="src/docs/images/input.png" alt="Policy Agent System Input" width="700" />
+<img src="policy-agent-system/src/docs/images/input.png" alt="Policy Agent System Input" width="700" />
 
 **Output**
 
-<img src="src/docs/images/output.png" alt="Policy Agent System Output" width="700" />
+<img src="policy-agent-system/src/docs/images/output.png" alt="Policy Agent System Output" width="700" />
 
 
 ## Architecture
 **This diagram illustrates the multi-agent workflow including parsing, execution, monitoring, and recovery.**
 
-<img src="src/docs/images/AI%20Multi-Agent%20Policy%20Execution%20System%20Architecture.png" alt="AI Multi-Agent Policy Execution System Architecture" width="700" />
+<img src="policy-agent-system/src/docs/images/AI Multi-Agent Policy Execution System Architecture.png" alt="AI Multi-Agent Policy Execution System Architecture" width="700" />
 
 For the full architecture writeup, see `ARCHITECTURE.md`.
 
