@@ -36,8 +36,14 @@ public class PolicyService {
     public PolicyResponse processPolicy(String policyText) {
         List<String> logs = new ArrayList<>();
 
-        List<TaskResponse> tasks = parserAgent.parseTasksFromPolicy(policyText);
-        logs.add("Parsed tasks: " + safeSize(tasks));
+        List<TaskResponse> tasks;
+        try {
+            tasks = parserAgent.parseTasksFromPolicy(policyText);
+            logs.add("Parsed tasks: " + safeSize(tasks));
+        } catch (Exception ex) {
+            tasks = new ArrayList<>();
+            logs.add("Failed to parse tasks from policy: " + ex.getMessage());
+        }
 
         tasks = plannerAgent.applyDefaultStatus(tasks);
         logs.add("Applied default status to tasks.");
